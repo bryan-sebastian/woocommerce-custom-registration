@@ -20,6 +20,10 @@ Things you need to install the software and how to install them
 2. Copy the code inside of validation-saving.php on your functions.php or you can include the validation-saving.php file in your functions.php
 3. Compile the style.scss
 
+### Screenshot
+
+![screenshot](/bryan-sebastian/woocommerce-custom-registration/blob/master/screenshot.png?raw=true)
+
 ## Authors
 
 * **Bryan Sebastian** - *Portfolio* - [bryan-sebastian.github.io](http://bryan-sebastian.github.io)
