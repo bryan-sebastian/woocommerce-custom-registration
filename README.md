@@ -24,7 +24,7 @@ Things you need to install the software and how to install them
 
 ![screenshot](screenshot.png?raw=true)
 
-## Authors
+## Author
 
 * **Bryan Sebastian** - *Portfolio* - [bryan-sebastian.github.io](http://bryan-sebastian.github.io)
 
