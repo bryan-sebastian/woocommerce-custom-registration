@@ -22,7 +22,7 @@ Things you need to install the software and how to install them
 
 ### Screenshot
 
-![screenshot](/bryan-sebastian/woocommerce-custom-registration/blob/master/screenshot.png?raw=true)
+![screenshot](screenshot.png?raw=true)
 
 ## Authors
 
