@@ -1,0 +1,80 @@
+/* Variables */
+$light_gray: #e8e8e8;
+$light_2_gray: #e1e1e1;
+$light_blue: #3ab2e5;
+$dark_2_blue: #2c3e50;
+
+#customer_login_register {
+	padding: 72px 0 93px;
+	.__login,
+	.__register {
+		padding-top: 25px;
+		padding-bottom: 33px;
+	}
+	.__login {
+		@media ( min-width: 992px ) {
+			padding-right: 47px;
+		    border-right: 1px solid $light_gray;
+		}
+	}
+	.__register {
+		@media ( min-width: 992px ) {
+			padding-left: 47px;
+		}
+	}
+	h2 {
+		color: $dark_2_blue;
+		font: 20px RobotoBold;
+		margin-bottom: 36px;
+	}
+	.__input_field {
+		font: 15px RobotoRegular;
+		padding: 0 20px;
+	    height: 39px;
+	    border: 1px solid $light_gray;
+	    width: 100%;
+	    outline: none;
+	    margin-bottom: 12px;
+	}
+	.__lost_password {
+		color: $light_2_gray;
+		margin-bottom: 5px;
+		font: 14px RobotoRegular;
+		-webkit-transition: all 0.3s;
+	    transition: all 0.3s;
+		&:hover {
+			color: $light_blue;
+		}
+	}
+	.__form_action {
+		margin-top: 15px;
+		.__submit {
+			color: $light_blue;
+			border: 1px solid $light_blue;
+			font: 15px RobotoRegular;
+			padding: 10px;
+			min-width: 110px;
+			background: transparent;
+			cursor: pointer;
+			-webkit-transition: all 0.3s;
+		    transition: all 0.3s;
+			&:hover {
+				background: $light_blue;
+				color: #fff;
+			}
+		}
+		.__remember_me {
+			margin-left: 10px;
+			margin-bottom: 0;
+			cursor: pointer;
+			input,
+			span {
+			    display: inline-block;
+			    vertical-align: middle;
+			}
+			span {
+				font: 14px RobotoRegular;
+			}
+		}
+	}
+}
