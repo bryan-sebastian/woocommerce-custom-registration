@@ -10,29 +10,29 @@
 */
 function wooc_validate_extra_register_fields( $username, $email, $validation_errors ) {
 	if ( isset( $_POST['first_name'] ) && empty( $_POST['first_name'] ) )
-		$validation_errors->add( 'first_name_error', __( '<strong>Error</strong>: First name is required.', 'woocommerce' ) );
+		$validation_errors->add( 'first_name_error', __( 'First name is required.', 'woocommerce' ) );
 
 	if ( isset( $_POST['last_name'] ) && empty( $_POST['last_name'] ) )
-		$validation_errors->add( 'last_name_error', __( '<strong>Error</strong>: Last name is required.', 'woocommerce' ) );
+		$validation_errors->add( 'last_name_error', __( 'Last name is required.', 'woocommerce' ) );
 	
 	if ( isset( $_POST['address'] ) && empty( $_POST['address'] ) )
-		$validation_errors->add( 'address_1_error', __( '<strong>Error</strong>: Address is required.', 'woocommerce' ) );
+		$validation_errors->add( 'address_1_error', __( 'Address is required.', 'woocommerce' ) );
 	
 	if ( isset( $_POST['city'] ) && empty( $_POST['city'] ) )
-		$validation_errors->add( 'city_error', __( '<strong>Error</strong>: City is required.', 'woocommerce' ) );
+		$validation_errors->add( 'city_error', __( 'City is required.', 'woocommerce' ) );
 	
 	if ( isset( $_POST['zip_code'] ) && empty( $_POST['zip_code'] ) )
-		$validation_errors->add( 'zip_code_error', __( '<strong>Error</strong>: Postal / Zip code is required.', 'woocommerce' ) );
+		$validation_errors->add( 'zip_code_error', __( 'Postal / Zip code is required.', 'woocommerce' ) );
 	
 	if ( isset( $_POST['country'] ) && empty( $_POST['country'] ) )
-		$validation_errors->add( 'country_error', __( '<strong>Error</strong>: Country is required.', 'woocommerce' ) );
+		$validation_errors->add( 'country_error', __( 'Country is required.', 'woocommerce' ) );
 
 	if ( isset( $_POST['retype_password'] ) && empty( $_POST['retype_password'] ) )
-		$validation_errors->add( 'retype_password_error', __( '<strong>Error</strong>: Re-Type password is required.', 'woocommerce' ) );
+		$validation_errors->add( 'retype_password_error', __( 'Re-Type password is required.', 'woocommerce' ) );
 
 	if( isset( $_POST['password'] ) && ! empty( $_POST['password'] ) && isset( $_POST['retype_password'] ) && ! empty( $_POST['retype_password'] ) ) {
 		if( $_POST['password'] != $_POST['retype_password'] )
-			$validation_errors->add( 'password_retypepassword_validation_error', __( "<strong>Error</strong>: Passwords don't match.", 'woocommerce' ) );
+			$validation_errors->add( 'password_retypepassword_validation_error', __( "Passwords don't match.", 'woocommerce' ) );
 	}
 }
 add_action( 'woocommerce_register_post', 'wooc_validate_extra_register_fields', 10, 3 );
